@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+.skillContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to left, #0d1624, #0d1624, #400f6d);
+}
+
+.skillHeading {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.skillHeading h1 {
+  margin: 5px 0;
+  display: inline-block;
+  font-size: 5rem;
+  border-bottom: 2px solid rgb(12, 237, 12);
+  font-family: "Concert One", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.slideContainer {
+  max-width: 50%;
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  border-left: 2px solid #360663;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideContainer img {
+  vertical-align: middle;
+  width: 100%;
+  transition: all 1s;
+}
+
+.slideContainer img:hover {
+  transform: translateZ(1rem);
+}
+.slideContainer::before,
+.slideContainer::after {
+  content: "";
+  height: 100%;
+  background: linear-gradient(to left, #0d1624, #0d1624, #400f6d);
+  position: absolute;
+  z-index: 2;
+}
+
+.slideContainer::before {
+  left: 0;
+  top: 0;
+}
+.slideContainer::after {
+  right: 0;
+  top: 0;
+}
+
+.slideImage {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 10rem;
+  min-height: 10rem;
+  margin: 10px 20px;
+  padding: 15px;
+  perspective: 100px;
+  background-color: #fff;
+  border-radius: 10%;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(calc(10rem * 12));
+  }
+
+  100% {
+    transform: translateX(calc(-10rem * 12));
+  }
+}

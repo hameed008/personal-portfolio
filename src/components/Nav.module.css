@@ -1,0 +1,143 @@
+.navContainer {
+  /* background-color: #1a1d23; */
+  /* background-color: #1f2937; */
+  background: linear-gradient(to right, #0d1624, #0d1624, #400f6d);
+}
+.nav {
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.logo {
+  margin-left: 70px;
+  align-content: center;
+}
+.logo img {
+  display: inline-block;
+  width: 10rem;
+  margin: 0 1px;
+}
+
+.menu {
+  display: none;
+  align-content: center;
+  padding: 5px 20px;
+  border: 0.2px solid rgba(81, 30, 153, 0.691);
+  border-radius: 50px;
+  box-shadow: inset -0.5px 0.5px 2px rgba(155, 62, 183, 0.781);
+  background-color: #19222f9d;
+}
+.menu img {
+  width: 6rem;
+  height: 6rem;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5rem;
+  background-color: transparent;
+}
+
+.menu .active {
+  border: 1px solid #7746ed;
+  box-shadow: inset 0.5px 0.5px 5px rgb(80, 62, 183);
+  background-color: hsla(250, 58%, 40%, 0.383);
+}
+.menu img:hover {
+  background-color: #2f2a2a;
+}
+.menu .active:hover {
+  background-color: hsla(250, 58%, 40%, 0.383);
+}
+.socialLinks {
+  margin-right: 70px;
+  align-content: center;
+}
+.socialLinks a {
+  padding: 5px;
+  color: #0ef563;
+  font-size: 2.5rem;
+  text-decoration: none;
+  margin: 5px;
+}
+/* 
+.socialLinks a:link {
+  color: #0ef563;
+}
+
+.socialLinks a:visited {
+  color: #0ef563;
+}
+.socialLinks a:active {
+  color: #0ef563;
+} */
+
+@media (min-width: 1024px) {
+  .menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    display: block;
+    min-width: 220px;
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 915px) {
+  .nav {
+    position: static;
+  }
+  .logo {
+    margin-left: 40px;
+    align-content: center;
+  }
+  .logo img {
+    width: 60px;
+    margin: 0 1px;
+  }
+
+  .socialLinks {
+    margin-right: 40px;
+    align-content: center;
+  }
+  .socialLinks a {
+    font-size: 2rem;
+    margin: 4px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    padding: 2px 15px;
+    display: flex;
+  }
+
+  .socialLinks {
+    margin-right: 20px;
+    display: flex;
+  }
+  .socialLinks a {
+    margin: 0.2rem;
+  }
+  .menu img {
+    width: 6rem;
+    height: 6rem;
+  }
+}

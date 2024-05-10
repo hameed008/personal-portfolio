@@ -1,0 +1,27 @@
+.App {
+  color: blueviolet;
+  font-family: sans-serif;
+}
+
+.App input {
+  font-size: 24px;
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 5px;
+}
+.btn-container {
+  width: 50%;
+  box-sizing: border-box;
+}
+.btn {
+  font-size: 22px;
+  font-weight: 500;
+  background-color: rgb(30, 134, 30);
+  color: #fff;
+  margin: 10px;
+  width: 38%;
+  padding: 8px;
+  border-radius: 10px;
+}

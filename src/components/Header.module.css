@@ -1,0 +1,274 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Press+Start+2P&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(to right, #0d1624, #0d1624, #400f6d);
+  /* background-color: #1f2937; */
+  /* background-color: #0a0b0d; */
+  /* border: 1px solid red; */
+}
+.headerContainer {
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+.textContainer {
+  width: auto;
+  display: inline-block;
+  /* font-family: "Press Start 2P", system-ui; */
+  /* font-family: "Jaro", system-ui; */
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 4rem;
+}
+
+* .preText {
+  display: inline-block;
+  font-size: 10rem;
+  margin-left: 2rem;
+  /* border: 1px solid red; */
+}
+
+.name {
+  display: inline-block;
+  color: #a020f0;
+  font-size: 10rem;
+  letter-spacing: 0.1rem;
+  margin-left: 2rem;
+  /* border: 1px solid red; */
+}
+
+.description {
+  width: auto;
+  font-family: sans-serif;
+  margin-top: 4rem;
+  font-size: 2.7rem;
+  line-height: 4rem;
+  padding-left: 2.1rem;
+  /* border: 1px solid red; */
+}
+
+.name span img {
+  width: 7rem;
+  margin: 0 0 0 0.6rem;
+  transition: all 1s ease;
+  animation: rotate 2s ease infinite;
+}
+
+.text {
+  display: inline-block;
+  position: relative;
+  color: #0ae928;
+  font-size: 3.6rem;
+  padding: 0.5rem 0;
+  /* border: 1px solid red; */
+}
+#firstText {
+  margin-right: 1.3rem;
+  padding-left: 2.2rem;
+  color: #fff;
+}
+/* 
+#secText:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1f2937;
+  border-left: 0.2rem solid #0af7a4;
+  animation: animate 5s steps(12) infinite;
+} */
+
+/* 
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+} */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(14deg);
+  }
+
+  30% {
+    transform: rotate(-8deg);
+  }
+
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    height: 80vh;
+  }
+
+  .headerContainer {
+    max-width: 70rem;
+  }
+  .textContainer {
+    line-height: 2.4rem;
+  }
+  .preText {
+    font-size: 7rem;
+  }
+  .name {
+    font-size: 7rem;
+  }
+  .description {
+    margin-top: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .name span img {
+    width: 6rem;
+  }
+
+  .text {
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* .headerContainer {
+    max-width: 70rem;
+  } */
+  .textContainer {
+    line-height: 2rem;
+  }
+  .preText {
+    font-size: 5rem;
+  }
+
+  .name {
+    font-size: 5rem;
+  }
+  .description {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .name span img {
+    width: 3.8rem;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .headerContainer {
+    max-width: 55rem;
+  }
+  .textContainer {
+    line-height: 2rem;
+  }
+  .preText {
+    font-size: 4rem;
+  }
+  .name {
+    font-size: 4rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+  }
+  .name span img {
+    width: 3rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  /* .header {
+    height: 60vh;
+  } */
+  .headerContainer {
+    max-width: 45rem;
+  }
+  .textContainer {
+    line-height: 1.5rem;
+  }
+  .preText {
+    font-size: 3rem;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.4rem;
+    /* line-height: 1.4rem; */
+  }
+  .name span img {
+    width: 2.4rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .headerContainer {
+    max-width: 45rem;
+  }
+  .textContainer {
+    line-height: 1.5rem;
+  }
+  .preText {
+    font-size: 3.5rem;
+  }
+  .name {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+  .name span img {
+    width: 2.5rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  }
+}
