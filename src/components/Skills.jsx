@@ -150,20 +150,42 @@ const Skills = () => {
     },
   ];
   return (
-    <div className={style.skillContainer}>
-      <div className={style.skillHeading}>
-        <h1>Skills</h1>
+    <>
+      <div className={style.skillContainer}>
+        <div className={style.skillHeading}>
+          <h1>Skills</h1>
+        </div>
+
+        {/* New marquee */}
+        <div className={style.logoScrollWrapper}>
+          <div className={style.logoScroll}>
+            {skillsImg.map((img, index) => {
+              return (
+                <div className={style.logoWrapper} key={index}>
+                  <img
+                    src={img.url}
+                    loading="eager"
+                    alt=""
+                    className={style.logo}
+                    aria-hidden={index >= 12 ? "true" : "false"}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* <div className={style.slideContainer}>
+          {skillsImg.map((img, index) => {
+            return (
+              <div className={style.slideImage} key={index}>
+                <img src={img.url} alt="" />
+              </div>
+            );
+          })}
+        </div> */}
       </div>
-      <div className={style.slideContainer}>
-        {skillsImg.map((img, index) => {
-          return (
-            <div className={style.slideImage} key={index}>
-              <img src={img.url} alt="" />
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    </>
   );
 };
 
